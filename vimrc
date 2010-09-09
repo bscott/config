@@ -112,8 +112,8 @@ hi Error guibg=#744A49
 
 hi IncSearch guifg=#66418C guibg=#141321 gui=underline
 hi Search guifg=#66418C guibg=#141321
-hi CursorColumn guibg=#191926
-hi CursorLine guibg=#191926
+hi CursorColumn guibg=#212128
+hi CursorLine guibg=#212128
 
 set suffixesadd=.rb
 set suffixesadd=.css
@@ -180,14 +180,6 @@ map <D-H> :call GotoDefaultWd()
 set hls
 hi Search guifg=#66418c
 hi Search gui=NONE
-
-" fuzzyfindertextmate: cmd-e to trigger, cmd-enter to open selected file in new tab
-let g:FuzzyFinderOptions = { 'Base':{} }
-let g:FuzzyFinderOptions.Base.key_open_tab = '<D-CR>'
-map <D-e> :FuzzyFinderTextMate<CR>
-
-let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;doc/**;vendor/**;coverage/**;tmp/**;db/**"
-let g:FuzzyFinderOptions.Base.enumerating_limit = 20
 
 
 filetype plugin on
