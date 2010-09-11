@@ -3,6 +3,7 @@
 let g:ruby_operators = 1
  
 set incsearch
+set t_Co=256
 
 set autoindent
 set sw=2
@@ -40,6 +41,8 @@ imap <D-7> :tabn 7i<Right>
 imap <D-8> :tabn 8i<Right>
 imap <D-9> :tabli<Right>
 
+nmap <silent> ,b :FufBuffer<CR>
+nmap <silent> ,f :FufFileWithCurrentBufferDir<CR>
 
 " http://items.sjbach.com/319/configuring-vim-right
 nnoremap ' `
@@ -104,7 +107,7 @@ map <S-Right> I  
 autocmd BufRead,BufNewFile *.rjs     set filetype=ruby
 autocmd BufRead,BufNewFile *.rxml    set filetype=ruby
 
-colors twilight
+colors ir_black
 
 hi Pmenu guibg=#744A49
 hi Error guibg=#744A49
